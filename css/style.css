@@ -36,6 +36,7 @@
 #calculator h2{
     font-size: 30px;
     position: relative;
+    font-weight: 500;
 }
 
 #calculator h2::before{
@@ -45,4 +46,127 @@
     width: 150px;
     background: var(--linear-gradient);
     bottom: 5px;
+}
+
+#input_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label{
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500 ;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6d28d9;
+    color: #fff;
+    font-size: 18px;
+    padding: 4px;
+    outline: none;
+}
+
+#result{
+    text-align: center;
+    font-size: 35px;
+}
+
+#calculate{
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Media queries */
+
+@media (max-width:632px){
+    #container{
+        padding: 20px;
+    }
+
+   #calculator h2{
+    font-size: 20px;
+   }
+
+   #calculator h2::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 2px;
+ }
+
+ #result{
+    text-align: center;
+    font-size: 28px;
+ }
+}
+
+@media (max-width: 460px){
+     #calculator h2{
+    font-size: 16px;
+   }
+
+   #result{
+    text-align: center;
+    font-size: 22px;
+}
+
+#calculate{
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+}
+
+
+@media (max-width: 400px){
+     #calculator h2{
+    font-size: 14px;
+   }
+
+   .input-field label{
+    font-size: 12px;
+   }
+
+   #result{
+    text-align: center;
+    font-size: 18px;
+}
+
+#calculate{
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+   
 }
